@@ -1,0 +1,25 @@
+<main>
+  <header class="text-center">
+    <h2>Tic Tac Toe Game</h2>
+    <div *ngIf="!winnerFound; else showWinner">
+      <h3 *ngIf="!winnerFound">
+        Player Chance :- {{ gameService.currentPlayer }}
+      </h3>
+    </div>
+  </header>
+
+  <section class="board-wrapper" style="background:#efefef">
+    <app-game-board
+      (eventClickedOnBoard)="checkBoardforWinner()"
+      [boardElements]="boardElements"
+    ></app-game-board>
+  </section>
+
+  <section class="centerAlign">
+    <button (click)="resetGameBoard()">Reset</button>
+  </section>
+</main>
+
+<ng-template #showWinner>
+  <h2 class="highlight">Winner Found :- {{ gameService.currentPlayer }}</h2>
+</ng-template>

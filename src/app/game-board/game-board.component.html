@@ -1,0 +1,10 @@
+<div class="square-wrapper">
+  <ng-container *ngFor="let element of boardElements">
+    <app-game-square
+      (userClickSquare)="userClickSquare()"
+      class="square"
+      [square]="element"
+    >
+    </app-game-square>
+  </ng-container>
+</div>

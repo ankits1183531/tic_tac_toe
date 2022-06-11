@@ -1,0 +1,10 @@
+.square-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.square {
+  list-style: none;
+  flex: 0 0 33.333333%;
+}

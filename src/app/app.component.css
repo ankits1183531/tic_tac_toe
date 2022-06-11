@@ -1,3 +1,29 @@
-p {
-  font-family: Lato;
+.centerAlign {
+  display: flex;
+  justify-content: center;
+}
+
+.board-wrapper {
+  background-color: #efefef;
+  border-radius: 10px;
+  border: 1px #efefef;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  outline: none;
+  background: none;
+  border: 1px solid #7272e8;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.highlight{
+  color: greenyellow;
 }

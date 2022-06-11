@@ -1,0 +1,9 @@
+<div
+  [ngClass]="square.state === null ? 'pointerClass' : 'noEventClass'"
+  class="square-wrapper"
+  (click)="onSquareClick()"
+>
+  <p>
+    {{ square.state }}
+  </p>
+</div>
